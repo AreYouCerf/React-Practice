@@ -1,0 +1,43 @@
+.theThirdTask {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background: var(--panels);
+  padding: 20px;
+  border: none;
+  border-radius: 45px;
+  margin: 0 auto 30px auto;
+  max-width: 800px;
+}
+
+.hidden {
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--text-back);
+  font-size: 3rem;
+  padding: 30px;
+  border: none;
+  border-radius: 45px;
+  color: var(--text);
+  text-align: center;
+}
+
+.contentButton {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+  border: none;
+  border-radius: 45px;
+  font-size: 2rem;
+  cursor: pointer;
+  background: var(--buttons);
+  color: var(--text);
+  transition: transform 0.2s ease;
+}
+
+.contentButton:hover {
+  transform: scale(0.95);
+}
