@@ -1,22 +1,5 @@
-.theSixthTask {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  row-gap: 30px;
-  background: var(--panels);
-  padding: 20px;
-  border: none;
-  border-radius: 45px;
-  max-width: 800px;
-  margin: 0 auto 30px auto;
-}
-
 .timeCounter {
-  box-sizing: border-box;
   font-size: 3rem;
-  color: var(--text);
   width: 100%;
   display: flex;
   align-items: center;
@@ -28,9 +11,7 @@
 }
 
 .timer {
-  box-sizing: border-box;
   font-size: 3rem;
-  color: var(--text);
   width: 100%;
   display: flex;
   align-items: center;
@@ -42,46 +23,10 @@
 }
 
 .timerButtons {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-}
-
-.timerButtons button {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 200px;
-  font-size: 2rem;
-  font-style: inherit;
-  border: none;
-  border-radius: 45px;
-  padding: 20px;
-  color: var(--text);
-  background: var(--buttons);
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.timerButtons button:hover {
-  transform: scale(0.95);
-}
-
-.startButtonTimer:disabled,
-.stopButtonTimer:disabled,
-.clearButtonTimer:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.startButtonTimer:disabled:hover,
-.stopButtonTimer:disabled:hover,
-.clearButtonTimer:disabled:hover {
-  transform: scale(1);
 }
 
 .startTimerQuestion {
@@ -89,7 +34,6 @@
   left: 50%;
   top: 50%;
   background: var(--accent);
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,9 +57,7 @@
 }
 
 .question {
-  box-sizing: border-box;
   font-size: 3rem;
-  color: var(--text);
   width: 100%;
   display: flex;
   align-items: center;
@@ -124,33 +66,10 @@
   border-radius: 45px;
   background: var(--text-back);
   padding: 20px;
-  margin: 0;
 }
 
 .answerButtons {
-  box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-}
-
-.answerButtons button {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 200px;
-  font-size: 2rem;
-  font-style: inherit;
-  border: none;
-  border-radius: 45px;
-  padding: 20px;
-  color: var(--text);
-  background: var(--buttons);
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.answerButtons button:hover {
-  transform: scale(0.95);
 }

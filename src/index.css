@@ -28,11 +28,11 @@
   padding: 0;
 }
 
+html,
 body {
   height: 100%;
   background-color: var(--background);
   color: var(--text);
-  font-size: 62.5%;
   font-family: var(--font-main);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

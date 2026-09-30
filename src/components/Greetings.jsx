@@ -19,7 +19,7 @@ export default function Greetings() {
   }, [])
   const formattedTime = currentTime.toLocaleTimeString('ru-RU')
   return (
-    <section className={styles.theFirstTask}>
+    <section className={styles.greetings}>
       <div className={styles.greeting}>
         <p>{greetingText(currentTime)}</p>
         <p>Текущее время: {formattedTime}</p>

@@ -1,4 +1,4 @@
-.theFirstTask {
+.greetings {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,24 +7,16 @@
 }
 
 .greeting {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 20px;
-  color: var(--text);
-  margin: 0;
   border: none;
   position: fixed;
   top: 0;
   left: auto;
   z-index: 1000;
   background: var(--background);
-}
-
-.greeting p {
-  margin: 0;
-  padding: 0;
 }

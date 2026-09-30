@@ -1,11 +1,9 @@
 .themeButton {
-  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: none;
   border-radius: 50%;
-  margin: 0;
   cursor: pointer;
   position: fixed;
   bottom: 15px;
@@ -15,7 +13,6 @@
   transform: translateZ(0);
   z-index: 1000;
   background: none;
-  padding: 0;
 }
 
 .themeButton:hover {
