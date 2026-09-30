@@ -1,0 +1,92 @@
+.theFourthTask {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  background: var(--panels);
+  padding: 20px;
+  border: none;
+  border-radius: 45px;
+  margin: 0 auto 30px auto;
+  min-height: 711px;
+  color: var(--text);
+  max-width: 800px;
+}
+
+.list {
+  box-sizing: border-box;
+  width: 100%;
+  background: color-mix(in srgb, var(--text-back) 20%, transparent);
+  border: none;
+  border-radius: 45px;
+  padding: 20px;
+  margin: 0;
+  list-style-type: none;
+  font-size: 1.25rem;
+}
+
+.armedClashes,
+.countElements {
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--text-back);
+  font-size: 3rem;
+  border: none;
+  border-radius: 45px;
+  padding: 10px;
+  text-align: center;
+  padding: 20px;
+  font-weight: 400;
+}
+
+.countElements {
+  margin: 0;
+  background: color-mix(in srgb, var(--text-back) 20%, transparent);
+}
+
+.findWarInput {
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--input);
+  border: none;
+  border-radius: 45px;
+  padding: 20px;
+  color: var(--text);
+  font-size: 1.5rem;
+}
+
+.addWarButton,
+.sortNameButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--buttons);
+  border: none;
+  border-radius: 45px;
+  padding: 20px;
+  width: 100%;
+  font-size: 2rem;
+  max-height: fit-content;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: var(--text);
+}
+
+.addWarButton:hover,
+.sortNameButton:hover {
+  transform: scale(0.95);
+}
+
+.addWarInput,
+.addWarYearsInput {
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--input);
+  border: none;
+  border-radius: 45px;
+  padding: 20px;
+  color: var(--text);
+  font-size: 1.5rem;
+}

@@ -13,7 +13,7 @@
   max-width: 800px;
 }
 
-.hidden {
+.hiddenBlock {
   box-sizing: border-box;
   width: 100%;
   background: var(--text-back);

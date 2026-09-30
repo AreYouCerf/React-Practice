@@ -1,0 +1,82 @@
+.theFifthTask {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  position: relative;
+}
+
+.clientInfo {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 10px;
+  color: var(--text);
+  background: var(--panels);
+  padding: 20px;
+  border: none;
+  border-radius: 45px;
+  width: 100%;
+}
+
+.clientInfo label {
+  font-size: 2rem;
+}
+
+.clientInfo input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 45px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 45px;
+  background: var(--input);
+  padding: 20px;
+  color: var(--text);
+}
+
+.clientInfo button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--buttons);
+  border: none;
+  border-radius: 45px;
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 2rem;
+  max-height: fit-content;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: var(--text);
+}
+
+.clientInfo button:hover {
+  transform: scale(0.95);
+}
+
+.resultOfSubmit {
+  box-sizing: border-box;
+  position: absolute;
+  top: 627px;
+  left: auto;
+  background: var(--accent);
+  border: none;
+  border-radius: 45px;
+  padding: 10px 20px;
+  margin: 0;
+  display: none;
+  font-size: 1.5rem;
+  color: var(--text);
+  pointer-events: none;
+}
+
+.resultOfSubmitView {
+  display: block;
+}
