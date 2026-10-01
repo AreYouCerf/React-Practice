@@ -1,12 +1,17 @@
-import Greetings from './components/Greetings'
-import Counter from './components/Counter'
-import InvisibleBlock from './components/InvisibleBlock'
+import Greetings from './components/Greetings/Greetings.jsx'
+import Counter from './components/Counter/Counter.jsx'
+import InvisibleBlock from './components/InvisibleBlock/InvisibleBlock.jsx'
+import styles from './App.module.css'
 
 function App() {
   return (
-    <><Greetings />
-      <Counter />
-      <InvisibleBlock /></>
+    <>
+      <div className={styles.pageWrapper}>
+        <Greetings />
+        <Counter />
+        <InvisibleBlock />
+      </div>
+    </>
   )
 }
 

@@ -38,6 +38,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+section {
+  width: 100%
+}
+
 input,
 button,
 textarea,
@@ -48,4 +52,20 @@ select {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+#themeToggle .sunIcon {
+  display: none !important;
+}
+
+#themeToggle .moonIcon {
+  display: block !important;
+}
+
+html[data-theme='dark'] #themeToggle .sunIcon {
+  display: block !important;
+}
+
+html[data-theme='dark'] #themeToggle .moonIcon {
+  display: none !important;
 }

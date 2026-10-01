@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import styles from './styles/Greetings.module.css'
+import styles from './Greetings.module.css'
 
 const greetingText = (date) => {
   const hours = date.getHours()
@@ -19,11 +19,11 @@ export default function Greetings() {
   }, [])
   const formattedTime = currentTime.toLocaleTimeString('ru-RU')
   return (
-    <section className={styles.greetings}>
+    <header className={styles.greetings}>
       <div className={styles.greeting}>
         <p>{greetingText(currentTime)}</p>
         <p>Текущее время: {formattedTime}</p>
       </div>
-    </section>
+    </header>
   )
 }
