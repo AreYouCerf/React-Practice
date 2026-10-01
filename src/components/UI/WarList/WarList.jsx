@@ -1,4 +1,4 @@
-import styles from './Array.module.css'
+import styles from './WarList.module.css'
 
 const wars = [
   { id: 'NapoleonWars', title: 'Наполеоновские войны', years: '1799-1815' },
@@ -13,7 +13,7 @@ const wars = [
   { id: 'WorldWarII', title: 'Вторая мировая война', years: '1939-1945' },
 ]
 
-export default function Wars() {
+export default function WarList() {
   return (
     <ul className={styles.list}>
       {wars.map((war) => (
