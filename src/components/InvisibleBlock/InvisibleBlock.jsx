@@ -2,6 +2,7 @@ import { useState } from "react"
 import styles from './InvisibleBlock.module.css'
 import Card from '../UI/Card/Card.jsx'
 import Button from '../UI/Button/Button.jsx'
+import Input from '../UI/Input/Input.jsx'
 
 export default function InvisibleBlock() {
   const [isVisible, setIsVisible] = useState(false)

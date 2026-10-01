@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import Clock from '../UI/Clock/Clock.jsx'
 import styles from './Greetings.module.css'
 
-const greetingText = (date) => {
-  const hours = date.getHours()
+const greetingText = () => {
+  const hours = new Date().getHours()
   if (hours >= 5 && hours < 11) return 'Доброго утра!'
   if (hours >= 11 && hours < 17) return 'Доброго дня!'
   if (hours >= 17 && hours < 23) return 'Доброго вечера!'
@@ -10,19 +11,12 @@ const greetingText = (date) => {
 }
 
 export default function Greetings() {
-  const [currentTime, setCurrentTime] = useState(() => new Date())
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(new Date())
-    }, 1000)
-    return () => clearInterval(timer)
-  }, [])
-  const formattedTime = currentTime.toLocaleTimeString('ru-RU')
+  const [greeting] = useState(() => greetingText())
   return (
     <header className={styles.greetings}>
       <div className={styles.greeting}>
-        <p>{greetingText(currentTime)}</p>
-        <p>Текущее время: {formattedTime}</p>
+        <p>{greeting}</p>
+        <p>Текущее время: <Clock /></p>
       </div>
     </header>
   )

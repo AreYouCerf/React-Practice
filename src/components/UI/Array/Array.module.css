@@ -1,0 +1,9 @@
+.list {
+  width: 100%;
+  background: color-mix(in srgb, var(--text-back) 20%, transparent);
+  border: none;
+  border-radius: 45px;
+  padding: 20px;
+  list-style-type: none;
+  font-size: 1.25rem;
+}
