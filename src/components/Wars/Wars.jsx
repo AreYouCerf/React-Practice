@@ -10,7 +10,7 @@ export default function Wars() {
       <Card>
         <h2 className={styles.armedClashes}>Самые кровопролитные войны в истории нашей эры</h2>
         <Input type='search' placeholder='Введите данные для поиска...' aria-label='Введите данные для поиска' />
-        <h2 className={styles.countElements}>Поисковый запрос отсутствует</h2>
+        <p className={styles.countElements}>Поисковый запрос отсутствует</p>
         <Button>Сортировать по названию</Button>
         <WarList />
         <Input type='text' placeholder='Введите название для добавления в список...' aria-label='Введите название для добавления в список' />

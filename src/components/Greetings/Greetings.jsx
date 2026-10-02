@@ -13,11 +13,11 @@ export default function Greetings() {
   const currentTime = useNow(1000)
   const formattedTime = currentTime.toLocaleTimeString('ru-RU')
   return (
-    <section className={styles.greetings}>
+    <div className={styles.greetings}>
       <div className={styles.greeting}>
         <p>{greetingText(currentTime)}</p>
         <p>Текущее время: {formattedTime}</p>
       </div>
-    </section>
+    </div>
   )
 }

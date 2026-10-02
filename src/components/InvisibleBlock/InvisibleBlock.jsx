@@ -12,7 +12,7 @@ export default function InvisibleBlock() {
         <Button
           onClick={() => setIsVisible(prev => !prev)}
           aria-expanded={isVisible}
-          aria-controls='Скрытый блок'>
+          aria-controls='hidden-block'>
           {isVisible ? 'Скрыть содержимое' : 'Показать содержимое'}</Button>
       </Card>
     </section>
