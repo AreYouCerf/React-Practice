@@ -4,5 +4,6 @@
   border: none;
   border-radius: 45px;
   background: var(--input);
+  color: var(--text);
   padding: 20px;
 }

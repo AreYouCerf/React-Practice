@@ -7,12 +7,14 @@ import styles from './App.module.css'
 function App() {
   return (
     <>
-      <div className={styles.pageWrapper}>
+      <header>
         <Greetings />
+      </header>
+      <main className={styles.pageWrapper}>
         <Counter />
         <InvisibleBlock />
         <Wars />
-      </div>
+      </main>
     </>
   )
 }

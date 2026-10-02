@@ -1,11 +1,12 @@
-import { useState } from "react"
+import { useState } from 'react'
 import styles from './Counter.module.css'
 import Card from '../UI/Card/Card.jsx'
 import Button from '../UI/Button/Button.jsx'
 
+const step = 1
+
 export default function Counter() {
   const [count, setCount] = useState(0)
-  const step = 1
   const decrease = () => {
     setCount((previousCount) => Math.max(0, previousCount - step))
   }

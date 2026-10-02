@@ -1,9 +1,8 @@
-import { useState } from 'react'
-import Clock from '../UI/Clock/Clock.jsx'
 import styles from './Greetings.module.css'
+import useNow from './useNow.jsx'
 
-const greetingText = () => {
-  const hours = new Date().getHours()
+const greetingText = (date) => {
+  const hours = date.getHours()
   if (hours >= 5 && hours < 11) return 'Доброго утра!'
   if (hours >= 11 && hours < 17) return 'Доброго дня!'
   if (hours >= 17 && hours < 23) return 'Доброго вечера!'
@@ -11,13 +10,14 @@ const greetingText = () => {
 }
 
 export default function Greetings() {
-  const [greeting] = useState(greetingText())
+  const currentTime = useNow(1000)
+  const formattedTime = currentTime.toLocaleTimeString('ru-RU')
   return (
-    <header className={styles.greetings}>
+    <section className={styles.greetings}>
       <div className={styles.greeting}>
-        <p>{greeting}</p>
-        <p>Текущее время: <Clock /></p>
+        <p>{greetingText(currentTime)}</p>
+        <p>Текущее время: {formattedTime}</p>
       </div>
-    </header>
+    </section>
   )
 }
