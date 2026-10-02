@@ -1,7 +1,7 @@
 import Card from '../UI/Card/Card.jsx'
 import Input from '../UI/Input/Input.jsx'
 import Button from '../UI/Button/Button.jsx'
-import WarList from '../UI/WarList/WarList.jsx'
+import WarList from '../Wars/WarList/WarList.jsx'
 import styles from './Wars.module.css'
 
 export default function Wars() {

@@ -11,7 +11,7 @@ const greetingText = () => {
 }
 
 export default function Greetings() {
-  const [greeting] = useState(() => greetingText())
+  const [greeting] = useState(greetingText())
   return (
     <header className={styles.greetings}>
       <div className={styles.greeting}>
